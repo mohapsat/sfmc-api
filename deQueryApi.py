@@ -8,8 +8,8 @@ import json
 import requests
 
 
-app = Flask(__name__)
-api = Api(app)
+application = Flask(__name__)
+api = Api(application)
 
 
 class sfmc(Resource):
@@ -762,4 +762,4 @@ api.add_resource(check, '/check')
 api.add_resource(sfmc, '/sfmc/sends/<string:emailType>/<string:correlationId>')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)  # Turn off for PROD
+    application.run(host='0.0.0.0', debug=True)  # Turn off for PROD
