@@ -665,4 +665,4 @@ api.add_resource(check, '/check')
 api.add_resource(sfmc, '/sfmc/sends/<string:emailType>/<string:correlationId>')
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Turn off for PROD
+    app.run(host='0.0.0.0')  # Turn off for PROD
