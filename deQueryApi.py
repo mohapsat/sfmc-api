@@ -51,7 +51,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid', 'timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -110,7 +110,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid', 'timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -124,7 +124,7 @@ class sfmc(Resource):
             data_dict = {}
 
             records_found = len(getResponse.results)
-            print("# records  = %s" % len(getResponse.results))
+            # print("# records  = %s" % len(getResponse.results))
 
             if records_found > 0:
 
@@ -133,7 +133,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -170,7 +170,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid','timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -192,7 +192,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -229,7 +229,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid','timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -251,7 +251,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -288,7 +288,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid','timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -310,7 +310,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -347,7 +347,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid','timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -369,7 +369,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -406,7 +406,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid','timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -428,7 +428,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -465,7 +465,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid', 'timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -487,7 +487,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -524,7 +524,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid', 'timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -546,7 +546,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -583,7 +583,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid', 'timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -605,7 +605,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -642,7 +642,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid', 'timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -664,7 +664,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -701,7 +701,7 @@ class sfmc(Resource):
             # TODO: get columns in the DE and append to row props
             # row.props = getDeColumns(nameOfDE)
             row.props = ["correlationId", 'EmailAddress', 'SubscriberKey',
-                         'emailType', 'uid']
+                         'emailType', 'uid', 'timestamp_DT']
 
             # correlationId = 'PASS_RESET_TEST_001'
 
@@ -723,7 +723,7 @@ class sfmc(Resource):
                     # print("%s-%s"%(i,j))
                     for p, q in enumerate(j.Properties.Property):
                         # print(("%s-%s-%s"%(i,p,q)))
-                        print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
+                        # print("{\"name\": %s, \"value\": %s}" % (q.Name, q.Value))
                         data_dict.update({"name": q.Name, "value": q.Value})
                         data.append(data_dict.copy())
 
@@ -755,7 +755,8 @@ class sfmc(Resource):
 class check(Resource):
 
     def get(self):
-        return {'status': 'Services are operating normally.'}
+        return {'status': 'success',
+                'message': 'service is operating normally.'}
 
 
 api.add_resource(check, '/check')
