@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restful import Resource, Api
+from flask import render_template
 import FuelSDK as f
 import os
 import ssl
@@ -10,7 +11,10 @@ import requests
 
 application = Flask(__name__)
 # api = Api(application)
-api = Api(application, catch_all_404s=True)  # https://flask-restful.readthedocs.io/en/0.3.5/extending.html
+api = Api(application)  # https://flask-restful.readthedocs.io/en/0.3.5/extending.html
+
+
+
 
 class sfmc(Resource):
 
@@ -756,7 +760,13 @@ class check(Resource):
 
     def get(self):
         return {'status': 'success',
-                'message': 'service is operating normally.'}
+                'message': 'service is operating normally.',
+                'data': []}
+
+
+@application.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.txt'), 404
 
 
 api.add_resource(check, '/check')
