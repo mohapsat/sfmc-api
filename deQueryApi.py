@@ -78,7 +78,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -91,7 +91,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                             "message": 'No results returned by Salesforce',
+                             "message": '0 result(s) returned by Salesforce',
                              "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -124,6 +124,7 @@ class sfmc(Resource):
             data_dict = {}
 
             records_found = len(getResponse.results)
+            print("# records  = %s" % len(getResponse.results))
 
             if records_found > 0:
 
@@ -137,24 +138,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                            "message": 'Search results returned by Salesforce',
-                            "data": data}
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
+                                 "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
-                str = json.dumps(response_dict)
-                response = json.loads(str)
+                response_str = json.dumps(response_dict)
+                response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'password_changed':
 
@@ -194,24 +197,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'pdt_print_ready':
 
@@ -251,24 +256,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'pdt_proof_ready':
 
@@ -308,24 +315,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'photo_share_receiver':
 
@@ -365,26 +374,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-
-            pass
-
+                pass
 
         elif emailType.lower() == 'photo_share_sender':
 
@@ -424,24 +433,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'share_project_receiver':
 
@@ -481,24 +492,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'share_project_sender':
 
@@ -538,24 +551,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'ship_confirm':
 
@@ -595,24 +610,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'welcome':
 
@@ -652,24 +669,26 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
-                                 "data": data}
+                             "message": '0 result(s) returned by Salesforce',
+                             "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         elif emailType.lower() == 'new_prospect_request':
 
@@ -709,29 +728,32 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": str(records_found) + ' result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
+
+                # REF: https://stackoverflow.com/questions/42354001/python-json-object-must-be-str-bytes-or-bytearray-not-dict
 
             else:
 
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No results returned by Salesforce',
+                                 "message": '0 result(s) returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
                 response = json.loads(response_str)
 
-            pass
+                pass
 
         return response
 
 
 class check(Resource):
+
     def get(self):
         return {'status': 'Services are operating normally.'}
 
@@ -740,4 +762,4 @@ api.add_resource(check, '/check')
 api.add_resource(sfmc, '/sfmc/sends/<string:emailType>/<string:correlationId>')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')  # Turn off for PROD
+    app.run(host='0.0.0.0', debug=True)  # Turn off for PROD
