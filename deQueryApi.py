@@ -9,8 +9,8 @@ import requests
 
 
 application = Flask(__name__)
-api = Api(application)
-
+# api = Api(application)
+api = Api(application, catch_all_404s=True)  # https://flask-restful.readthedocs.io/en/0.3.5/extending.html
 
 class sfmc(Resource):
 
