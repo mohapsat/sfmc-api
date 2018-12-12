@@ -1,1 +1,1 @@
-{"status": "error", "message": "Resource not found. Please check URI. Did you mean /sfmc/sends/<string:emailType>/<string:correlationId> ?", "data": []}
+{"status": "error", "message": "Resource not found. Please check URL. Did you mean "/sfmc/sends/&lt;emailType&gt;/&lt;correlationId&gt; ?", "data": []}
