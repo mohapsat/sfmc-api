@@ -91,7 +91,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                             "message": 'Search results returned by Salesforce',
+                             "message": 'No results returned by Salesforce',
                              "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -148,7 +148,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'Search results returned by Salesforce',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 str = json.dumps(response_dict)
@@ -194,7 +194,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -205,7 +205,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -262,7 +262,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -319,7 +319,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -365,7 +365,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -376,7 +376,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -424,7 +424,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -435,7 +435,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -481,7 +481,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -492,7 +492,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -538,7 +538,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -549,7 +549,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -595,7 +595,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -606,7 +606,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -652,7 +652,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -663,7 +663,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -709,7 +709,7 @@ class sfmc(Resource):
                         data.append(data_dict.copy())
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'Search results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
@@ -720,7 +720,7 @@ class sfmc(Resource):
                 data = []
 
                 response_dict = {"status": 'success',
-                                 "message": 'No records found',
+                                 "message": 'No results returned by Salesforce',
                                  "data": data}
 
                 response_str = json.dumps(response_dict)
