@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_restful import Resource, Api
+from flask_restful import Resource, Api, abort, reqparse
 from flask import render_template
 import FuelSDK as f
 import os
@@ -7,18 +7,47 @@ import ssl
 import config
 import json
 import requests
+from flasgger import Swagger, swag_from
 
 
 application = Flask(__name__)
+# application = connexion.App(__name__, specification_dir='./')
 # api = Api(application)
 api = Api(application)  # https://flask-restful.readthedocs.io/en/0.3.5/extending.html
 
 
+application.config['SWAGGER'] = {
+    'title': 'Platform API',
+    'uiversion': 2,
+    'docExpansion': 'full'  # to expans operations
+}
+swag = Swagger(application)
 
 
 class sfmc(Resource):
 
     def get(self, emailType, correlationId):
+
+        """
+            Fetch sends for a given emailType and correlationId
+            ---
+            tags:
+              - SFMC
+            parameters:
+              - in: path
+                name: emailType
+                required: true
+                description: The emailType of the send, try password_reset.
+                type: string
+              - in: path
+                name: correlationId
+                required: true
+                description: The correlationId  of the send, try TEST
+                type: string
+            responses:
+              200:
+                description: Results from Salesforce
+        """
 
         # requestToken
         token_url = "https://auth.exacttargetapis.com/v1/requestToken"
@@ -759,6 +788,16 @@ class sfmc(Resource):
 class check(Resource):
 
     def get(self):
+
+        """
+            Check API endpoint status
+            ---
+            tags:
+              - SFMC
+            responses:
+              200:
+                description: Results from Salesforce
+        """
         return {'status': 'success',
                 'message': 'service is operating normally.',
                 'data': []}
