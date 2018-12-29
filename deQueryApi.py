@@ -17,7 +17,7 @@ api = Api(application)  # https://flask-restful.readthedocs.io/en/0.3.5/extendin
 
 
 application.config['SWAGGER'] = {
-    'title': 'Platform API',
+    'title': 'Marketing Cloud API',
     'uiversion': 2,
     'docExpansion': 'full'  # to expans operations
 }

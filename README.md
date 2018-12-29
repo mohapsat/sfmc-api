@@ -1,7 +1,17 @@
-# sfmc-api
-Enables you to query data extensions in Salesforce marketing cloud using any column(s) from the data extension.
+## Salesforce Marekting Cloud Data Extension Query API
+Enables you to query data extensions in [Salesforce Marketing Cloud](https://www.salesforce.com/products/marketing-cloud/overview/) using any column(s) from the data extension.
 
-Available endpoints:
+BuiltWith:
+`
+Flask & Swagger UI
+`
+
+**Available endpoints:**
+
+## Swagger UI
+`http://0.0.0.0:5000/apidocs/`
+
+
 
 ## Check
 `curl 'http://0.0.0.0:5000/check'`
