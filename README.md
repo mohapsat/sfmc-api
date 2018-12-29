@@ -10,8 +10,7 @@ Flask & Swagger UI
 
 ## Swagger UI
 `http://0.0.0.0:5000/apidocs/`
-
-
+![Swagger UI](https://raw.githubusercontent.com/mohapsat/sfmc-api/master/sfmcApi_SwaggerUI.png)
 
 ## Check
 `curl 'http://0.0.0.0:5000/check'`
