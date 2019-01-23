@@ -1,1 +1,1 @@
-web: gunicorn swag
+web: gunicorn swag api application
