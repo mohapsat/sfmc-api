@@ -24,6 +24,6 @@ requests==2.20.1
 Salesforce-FuelSDK==1.1.1
 six==1.11.0
 suds-jurko==0.6
-urllib3==1.24.1
+urllib3==1.26.5
 WebOb==1.8.4
 Werkzeug==0.14.1
