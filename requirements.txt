@@ -15,7 +15,7 @@ itsdangerous==1.1.0
 Jinja2==2.10
 jsonschema==2.6.0
 MarkupSafe==1.1.0
-mistune==0.8.4
+mistune==2.0.3
 openapi-spec-validator==0.2.4
 PyJWT==1.6.4
 pytz==2018.7
